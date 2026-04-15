@@ -1,0 +1,1183 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Ingeniería civil de reparación y remodelaje en León, Guanajuato. Eduardo Ramírez Santamaría: supervisión profesional, diagnósticos estructurales y ejecución confiable."
+    />
+    <title>Ingeniería Civil | Reparación y Remodelaje en León, Gto.</title>
+
+    <meta property="og:title" content="Reparación y remodelaje | León, Gto." />
+    <meta
+      property="og:description"
+      content="Servicios de ingeniería civil: diagnóstico, reparación, reforzamiento y remodelación con supervisión profesional."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0b3a5a" />
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: "#eef7ff",
+                100: "#d9eeff",
+                200: "#b9dfff",
+                300: "#87c9ff",
+                400: "#4eaaff",
+                500: "#1e86ff",
+                600: "#0d67e6",
+                700: "#0b4fb5",
+                800: "#0b3a5a",
+                900: "#082a43",
+              },
+              earth: {
+                50: "#fbf7f2",
+                100: "#f3e8d8",
+                200: "#e6d1af",
+                300: "#d5b37e",
+                400: "#c39155",
+                500: "#b1763b",
+                600: "#925c2f",
+                700: "#744726",
+                800: "#5a371e",
+                900: "#3e2615",
+              },
+            },
+            boxShadow: {
+              soft: "0 10px 30px -12px rgba(2, 16, 27, 0.35)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      /* Avoid layout shift on toggle width changes */
+      .lang-chip {
+        min-width: 5.5rem;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased">
+    <!-- Top bar -->
+    <header class="sticky top-0 z-40 border-b border-white/10 bg-slate-950/75 backdrop-blur">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+        <a href="#inicio" class="group inline-flex items-center gap-3">
+          <div
+            class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-brand-500 to-earth-500 shadow-soft ring-1 ring-white/15"
+            aria-hidden="true"
+          >
+            <svg viewBox="0 0 24 24" class="h-6 w-6 text-white" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 21h18" />
+              <path d="M6 21V8l6-5 6 5v13" />
+              <path d="M10 21v-6h4v6" />
+            </svg>
+          </div>
+          <div class="leading-tight">
+            <div class="text-sm font-semibold tracking-wide text-white">
+              <span data-i18n="brandName">Ingeniería Civil</span>
+            </div>
+            <div class="text-xs text-slate-300" data-i18n="brandTagline">Reparación y remodelaje • León, Gto.</div>
+          </div>
+        </a>
+
+        <nav class="hidden items-center gap-6 text-sm text-slate-200 md:flex">
+          <a class="hover:text-white" href="#servicios" data-i18n="navServices">Servicios</a>
+          <a class="hover:text-white" href="#portafolio" data-i18n="navPortfolio">Portafolio</a>
+          <a class="hover:text-white" href="#testimonios" data-i18n="navTestimonials">Testimonios</a>
+          <a class="hover:text-white" href="#contacto" data-i18n="navContact">Contacto</a>
+        </nav>
+
+        <div class="flex items-center gap-2">
+          <button
+            id="langToggle"
+            type="button"
+            class="lang-chip inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/5 px-3 py-2 text-xs font-semibold text-white hover:bg-white/10"
+            aria-label="Cambiar idioma"
+          >
+            <span class="rounded-lg bg-brand-800/60 px-2 py-1 text-[11px]" id="langA">ES</span>
+            <span class="text-slate-300" id="langB">EN</span>
+          </button>
+          <a
+            href="#contacto"
+            class="hidden rounded-xl bg-white px-3 py-2 text-xs font-semibold text-slate-950 hover:bg-slate-200 sm:inline-flex"
+            data-i18n="headerQuote"
+            >Cotizar</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="inicio" class="relative overflow-hidden">
+      <div class="pointer-events-none absolute inset-0">
+        <div class="absolute -top-24 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-brand-600/20 blur-3xl"></div>
+        <div class="absolute -bottom-32 left-12 h-[420px] w-[420px] rounded-full bg-earth-500/20 blur-3xl"></div>
+        <div class="absolute right-10 top-24 h-[380px] w-[380px] rounded-full bg-brand-500/10 blur-3xl"></div>
+      </div>
+
+      <div class="mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-12 lg:py-24">
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+            <span data-i18n="heroPill">Atención en León, Guanajuato y alrededores</span>
+          </div>
+
+          <h1 class="mt-5 text-3xl font-extrabold tracking-tight text-white sm:text-5xl">
+            <span data-i18n="heroHeadline1">Repara, refuerza y remodela</span>
+            <span class="bg-gradient-to-r from-brand-400 to-earth-300 bg-clip-text text-transparent" data-i18n="heroHeadline2"
+              >con ingeniería civil profesional</span
+            >
+          </h1>
+          <p class="mt-4 max-w-2xl text-base text-slate-200 sm:text-lg" data-i18n="heroSub">
+            Diagnóstico claro, solución correcta y ejecución supervisada. Ideal para casas, locales y naves: grietas, humedad, losas,
+            cimentaciones, ampliaciones y remodelaciones.
+          </p>
+
+          <div class="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <a
+              href="https://wa.me/5214776464346?text=Hola%2C%20me%20gustar%C3%ADa%20una%20evaluaci%C3%B3n%20para%20mi%20obra%20en%20Le%C3%B3n%2C%20Gto."
+              target="_blank"
+              rel="noreferrer"
+              class="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-emerald-400"
+            >
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M20.52 3.48A11.85 11.85 0 0 0 12.03 0C5.46 0 .12 5.34.12 11.91c0 2.1.55 4.15 1.6 5.97L0 24l6.27-1.64a11.9 11.9 0 0 0 5.76 1.47h.01c6.57 0 11.91-5.34 11.91-11.91 0-3.18-1.24-6.17-3.43-8.44Zm-8.49 18.3h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.72.97.99-3.63-.24-.37a9.88 9.88 0 0 1-1.53-5.25c0-5.46 4.45-9.91 9.92-9.91 2.64 0 5.12 1.03 6.98 2.9a9.82 9.82 0 0 1 2.89 7c0 5.47-4.45 9.92-9.89 9.92Zm5.44-7.44c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.66.15-.2.3-.76.97-.93 1.17-.17.2-.34.22-.64.07-.3-.15-1.24-.46-2.36-1.46-.87-.78-1.46-1.74-1.63-2.04-.17-.3-.02-.46.13-.6.13-.13.3-.34.45-.5.15-.17.2-.29.3-.49.1-.2.05-.37-.02-.52-.07-.15-.66-1.6-.91-2.2-.24-.58-.48-.5-.66-.51h-.56c-.2 0-.52.07-.8.37-.27.3-1.05 1.03-1.05 2.5 0 1.47 1.08 2.9 1.23 3.1.15.2 2.12 3.24 5.13 4.55.72.31 1.28.5 1.71.64.72.23 1.37.2 1.88.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.08-.13-.27-.2-.57-.34Z"
+                />
+              </svg>
+              <span data-i18n="ctaWhatsapp">WhatsApp</span>
+              <span class="text-xs font-medium text-slate-900/70" data-i18n="ctaFastReply">respuesta rápida</span>
+            </a>
+
+            <a
+              href="tel:+524776464346"
+              class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white hover:bg-white/10"
+            >
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.86.32 1.7.57 2.5a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.58-1.09a2 2 0 0 1 2.11-.45c.8.25 1.64.45 2.5.57A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              <span data-i18n="ctaCall">Llamar</span>
+            </a>
+
+            <a
+              href="mailto:proyectosdeurbanizaci%C3%B3nram@gmail.com?subject=Solicitud%20de%20evaluaci%C3%B3n%20%7C%20Le%C3%B3n%2C%20Gto."
+              class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white hover:bg-white/10"
+            >
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16v16H4z" />
+                <path d="m4 6 8 7 8-7" />
+              </svg>
+              <span data-i18n="ctaEmail">Email</span>
+            </a>
+          </div>
+
+          <div class="mt-8 grid max-w-xl grid-cols-2 gap-3 text-xs text-slate-200 sm:grid-cols-4">
+            <div class="rounded-xl border border-white/10 bg-white/5 px-3 py-3">
+              <div class="text-white" data-i18n="trust1Title">Experiencia</div>
+              <div class="mt-1 text-slate-300" data-i18n="trust1Body">Obra y supervisión</div>
+            </div>
+            <div class="rounded-xl border border-white/10 bg-white/5 px-3 py-3">
+              <div class="text-white" data-i18n="trust2Title">Diagnóstico</div>
+              <div class="mt-1 text-slate-300" data-i18n="trust2Body">Causa raíz</div>
+            </div>
+            <div class="rounded-xl border border-white/10 bg-white/5 px-3 py-3">
+              <div class="text-white" data-i18n="trust3Title">Calidad</div>
+              <div class="mt-1 text-slate-300" data-i18n="trust3Body">Materiales correctos</div>
+            </div>
+            <div class="rounded-xl border border-white/10 bg-white/5 px-3 py-3">
+              <div class="text-white" data-i18n="trust4Title">Transparencia</div>
+              <div class="mt-1 text-slate-300" data-i18n="trust4Body">Alcances claros</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-6 shadow-soft">
+            <div class="absolute inset-0 opacity-60">
+              <svg class="h-full w-full" viewBox="0 0 400 360" fill="none" aria-hidden="true">
+                <defs>
+                  <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+                    <path d="M 28 0 L 0 0 0 28" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
+                  </pattern>
+                  <linearGradient id="beam" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="rgba(30,134,255,0.35)" />
+                    <stop offset="1" stop-color="rgba(195,145,85,0.28)" />
+                  </linearGradient>
+                </defs>
+                <rect x="0" y="0" width="400" height="360" fill="url(#grid)" />
+                <path d="M-20 320 C 120 220, 220 260, 430 120" stroke="url(#beam)" stroke-width="10" />
+                <circle cx="310" cy="115" r="58" fill="rgba(30,134,255,0.18)" />
+                <circle cx="128" cy="250" r="76" fill="rgba(195,145,85,0.16)" />
+              </svg>
+            </div>
+
+            <div class="relative">
+              <div class="flex items-center justify-between">
+                <div>
+                  <div class="text-xs font-semibold text-slate-200" data-i18n="cardKicker">Evaluación inicial</div>
+                  <div class="mt-1 text-xl font-bold text-white" data-i18n="cardTitle">Diagnóstico + propuesta</div>
+                </div>
+                <div class="rounded-xl border border-white/15 bg-white/5 px-3 py-2 text-xs font-semibold text-slate-100" data-i18n="cardBadge">
+                  24–72 hrs
+                </div>
+              </div>
+
+              <ul class="mt-5 space-y-3 text-sm text-slate-200">
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-lg bg-brand-700/60 ring-1 ring-white/10">
+                    <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M20 7H4" />
+                      <path d="M20 12H4" />
+                      <path d="M20 17H4" />
+                    </svg>
+                  </span>
+                  <div>
+                    <div class="font-semibold text-white" data-i18n="cardBullet1Title">Alcance claro</div>
+                    <div class="text-slate-300" data-i18n="cardBullet1Body">Qué se hará, cómo y en cuánto tiempo.</div>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-lg bg-earth-700/60 ring-1 ring-white/10">
+                    <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M12 21s8-4 8-10a8 8 0 1 0-16 0c0 6 8 10 8 10z" />
+                      <path d="M12 11a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                    </svg>
+                  </span>
+                  <div>
+                    <div class="font-semibold text-white" data-i18n="cardBullet2Title">En sitio</div>
+                    <div class="text-slate-300" data-i18n="cardBullet2Body">Visita en León y zona metropolitana.</div>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-lg bg-emerald-700/60 ring-1 ring-white/10">
+                    <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M20 6 9 17l-5-5" />
+                    </svg>
+                  </span>
+                  <div>
+                    <div class="font-semibold text-white" data-i18n="cardBullet3Title">Supervisión</div>
+                    <div class="text-slate-300" data-i18n="cardBullet3Body">Control de calidad y seguridad en obra.</div>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="mt-6 rounded-2xl border border-white/10 bg-slate-950/40 p-4">
+                <div class="text-xs font-semibold text-slate-200" data-i18n="miniTitle">¿Tienes una urgencia?</div>
+                <div class="mt-1 text-sm text-slate-300" data-i18n="miniBody">
+                  Envíame fotos y ubicación por WhatsApp. Te digo el siguiente paso.
+                </div>
+                <a
+                  class="mt-3 inline-flex w-full items-center justify-center rounded-xl bg-white px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-slate-200"
+                  href="https://wa.me/5214776464346?text=Hola%2C%20tengo%20una%20urgencia%20en%20mi%20propiedad%20en%20Le%C3%B3n%2C%20Gto.%20%C2%BFMe%20apoyas%20con%20un%20diagn%C3%B3stico%3F"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-i18n="miniCta"
+                  >Enviar por WhatsApp</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="sobre" class="border-t border-white/10 bg-slate-950">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
+        <div class="grid gap-10 lg:grid-cols-12 lg:items-center">
+          <div class="lg:col-span-5">
+            <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl" data-i18n="aboutTitle">Sobre el ingeniero</h2>
+            <p class="mt-4 text-slate-200" data-i18n="aboutBody">
+              Ingeniero civil con amplia experiencia en reparación, reforzamiento y remodelación. En cada proyecto se prioriza: seguridad,
+              solución de causa raíz y control de calidad. La meta no es “parchar”, es dejar tu inmueble sólido y duradero.
+            </p>
+
+            <div class="mt-6 space-y-3">
+              <div class="flex items-start gap-3">
+                <span class="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-xl bg-brand-800/60 ring-1 ring-white/10">
+                  <svg viewBox="0 0 24 24" class="h-4 w-4 text-white" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 20l9-5-9-5-9 5 9 5Z" />
+                    <path d="M12 12l9-5-9-5-9 5 9 5Z" />
+                  </svg>
+                </span>
+                <div>
+                  <div class="font-semibold text-white" data-i18n="aboutPoint1Title">Experiencia práctica</div>
+                  <div class="text-sm text-slate-300" data-i18n="aboutPoint1Body">Obra real, presupuestos claros y supervisión profesional.</div>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-xl bg-earth-800/60 ring-1 ring-white/10">
+                  <svg viewBox="0 0 24 24" class="h-4 w-4 text-white" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 12h18" />
+                    <path d="M12 3v18" />
+                  </svg>
+                </span>
+                <div>
+                  <div class="font-semibold text-white" data-i18n="aboutPoint2Title">Criterio técnico</div>
+                  <div class="text-sm text-slate-300" data-i18n="aboutPoint2Body">Se elige el método adecuado según el problema y el contexto.</div>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-xl bg-emerald-800/60 ring-1 ring-white/10">
+                  <svg viewBox="0 0 24 24" class="h-4 w-4 text-white" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </span>
+                <div>
+                  <div class="font-semibold text-white" data-i18n="aboutPoint3Title">Resultados confiables</div>
+                  <div class="text-sm text-slate-300" data-i18n="aboutPoint3Body">Trabajo limpio, seguro y con enfoque en durabilidad.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+                <div class="text-sm font-semibold text-white" data-i18n="aboutCard1Title">Cómo trabajamos</div>
+                <ol class="mt-4 space-y-3 text-sm text-slate-200">
+                  <li class="flex gap-3">
+                    <span class="mt-0.5 inline-flex h-6 w-6 items-center justify-center rounded-lg bg-brand-700/60 text-xs font-bold">1</span>
+                    <span data-i18n="aboutCard1Step1">Evaluación: fotos + visita en sitio.</span>
+                  </li>
+                  <li class="flex gap-3">
+                    <span class="mt-0.5 inline-flex h-6 w-6 items-center justify-center rounded-lg bg-brand-700/60 text-xs font-bold">2</span>
+                    <span data-i18n="aboutCard1Step2">Diagnóstico: causa raíz y riesgos.</span>
+                  </li>
+                  <li class="flex gap-3">
+                    <span class="mt-0.5 inline-flex h-6 w-6 items-center justify-center rounded-lg bg-brand-700/60 text-xs font-bold">3</span>
+                    <span data-i18n="aboutCard1Step3">Propuesta: alcance, costos y tiempos.</span>
+                  </li>
+                  <li class="flex gap-3">
+                    <span class="mt-0.5 inline-flex h-6 w-6 items-center justify-center rounded-lg bg-brand-700/60 text-xs font-bold">4</span>
+                    <span data-i18n="aboutCard1Step4">Ejecución: supervisión y control de calidad.</span>
+                  </li>
+                </ol>
+              </div>
+
+              <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+                <div class="text-sm font-semibold text-white" data-i18n="aboutCard2Title">Ideal para</div>
+                <div class="mt-4 grid grid-cols-2 gap-3 text-sm text-slate-200">
+                  <div class="rounded-2xl border border-white/10 bg-slate-950/40 px-3 py-3" data-i18n="aboutIdeal1">Casas y departamentos</div>
+                  <div class="rounded-2xl border border-white/10 bg-slate-950/40 px-3 py-3" data-i18n="aboutIdeal2">Locales comerciales</div>
+                  <div class="rounded-2xl border border-white/10 bg-slate-950/40 px-3 py-3" data-i18n="aboutIdeal3">Naves y bodegas</div>
+                  <div class="rounded-2xl border border-white/10 bg-slate-950/40 px-3 py-3" data-i18n="aboutIdeal4">Remodelaciones</div>
+                </div>
+                <p class="mt-4 text-xs text-slate-300" data-i18n="aboutNote">
+                  * Sustituye los ejemplos por tus especialidades reales (y agrega tu cédula/registro si aplica).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="servicios" class="border-t border-white/10 bg-slate-950">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
+        <div class="max-w-2xl">
+          <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl" data-i18n="servicesTitle">Servicios</h2>
+          <p class="mt-3 text-slate-200" data-i18n="servicesSub">
+            Soluciones enfocadas a seguridad, durabilidad y buena estética. Cada intervención parte de un diagnóstico técnico.
+          </p>
+        </div>
+
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Card -->
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10">
+            <div class="flex items-center gap-3">
+              <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-brand-800/60 ring-1 ring-white/10">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M3 21h18" />
+                  <path d="M7 21V7l5-4 5 4v14" />
+                  <path d="M10 21v-7h4v7" />
+                </svg>
+              </span>
+              <div class="font-semibold text-white" data-i18n="svc1Title">Diagnóstico estructural</div>
+            </div>
+            <p class="mt-3 text-sm text-slate-300" data-i18n="svc1Body">Identificación de grietas, asentamientos, humedad y fallas.</p>
+          </div>
+
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10">
+            <div class="flex items-center gap-3">
+              <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-earth-800/60 ring-1 ring-white/10">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M3 3h18v6H3z" />
+                  <path d="M7 9v12" />
+                  <path d="M17 9v12" />
+                  <path d="M7 13h10" />
+                </svg>
+              </span>
+              <div class="font-semibold text-white" data-i18n="svc2Title">Reforzamiento</div>
+            </div>
+            <p class="mt-3 text-sm text-slate-300" data-i18n="svc2Body">Soluciones para muros, trabes, losas y elementos dañados.</p>
+          </div>
+
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10">
+            <div class="flex items-center gap-3">
+              <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-brand-800/60 ring-1 ring-white/10">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M4 20h16" />
+                  <path d="M7 20V10l5-4 5 4v10" />
+                  <path d="M9 14h6" />
+                </svg>
+              </span>
+              <div class="font-semibold text-white" data-i18n="svc3Title">Remodelación</div>
+            </div>
+            <p class="mt-3 text-sm text-slate-300" data-i18n="svc3Body">Redistribución, acabados, funcionalidad y mejora de espacios.</p>
+          </div>
+
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10">
+            <div class="flex items-center gap-3">
+              <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-earth-800/60 ring-1 ring-white/10">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M3 12h18" />
+                  <path d="M12 3v18" />
+                  <path d="M7 7h10v10H7z" />
+                </svg>
+              </span>
+              <div class="font-semibold text-white" data-i18n="svc4Title">Ampliaciones</div>
+            </div>
+            <p class="mt-3 text-sm text-slate-300" data-i18n="svc4Body">Crecimiento seguro: cimentación, losas, muros y estructura.</p>
+          </div>
+
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10">
+            <div class="flex items-center gap-3">
+              <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-brand-800/60 ring-1 ring-white/10">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M3 21h18" />
+                  <path d="M6 21V8l6-5 6 5v13" />
+                  <path d="M8 11h8" />
+                </svg>
+              </span>
+              <div class="font-semibold text-white" data-i18n="svc5Title">Impermeabilización y humedad</div>
+            </div>
+            <p class="mt-3 text-sm text-slate-300" data-i18n="svc5Body">Tratamientos, sellos y corrección de filtraciones.</p>
+          </div>
+
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10">
+            <div class="flex items-center gap-3">
+              <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-earth-800/60 ring-1 ring-white/10">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M12 2 2 7l10 5 10-5-10-5Z" />
+                  <path d="M2 17l10 5 10-5" />
+                  <path d="M2 12l10 5 10-5" />
+                </svg>
+              </span>
+              <div class="font-semibold text-white" data-i18n="svc6Title">Cimentaciones y asentamientos</div>
+            </div>
+            <p class="mt-3 text-sm text-slate-300" data-i18n="svc6Body">Corrección de asentamientos y solución de causas.</p>
+          </div>
+
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10">
+            <div class="flex items-center gap-3">
+              <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-brand-800/60 ring-1 ring-white/10">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M3 6h18" />
+                  <path d="M7 6v14" />
+                  <path d="M17 6v14" />
+                  <path d="M3 20h18" />
+                </svg>
+              </span>
+              <div class="font-semibold text-white" data-i18n="svc7Title">Obra civil y albañilería</div>
+            </div>
+            <p class="mt-3 text-sm text-slate-300" data-i18n="svc7Body">Aplanados, muros, pisos, losas y detalles finos.</p>
+          </div>
+
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10">
+            <div class="flex items-center gap-3">
+              <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-earth-800/60 ring-1 ring-white/10">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M12 20h9" />
+                  <path d="M12 4h9" />
+                  <path d="M4 9l6-6" />
+                  <path d="M4 15l6 6" />
+                  <path d="M4 12h8" />
+                </svg>
+              </span>
+              <div class="font-semibold text-white" data-i18n="svc8Title">Supervisión y control</div>
+            </div>
+            <p class="mt-3 text-sm text-slate-300" data-i18n="svc8Body">Bitácora, calidad, seguridad y seguimiento de avances.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portafolio" class="border-t border-white/10 bg-slate-950">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div class="max-w-2xl">
+            <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl" data-i18n="portfolioTitle">Portafolio</h2>
+            <p class="mt-3 text-slate-200" data-i18n="portfolioSub">
+              Ejemplos de tipos de trabajo. Sustituye los placeholders por fotos reales (antes/después) para elevar la confianza.
+            </p>
+          </div>
+          <a
+            href="#contacto"
+            class="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white hover:bg-white/10"
+            data-i18n="portfolioCta"
+            >Pedir evaluación</a
+          >
+        </div>
+
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Gallery tile template -->
+          <figure class="group overflow-hidden rounded-3xl border border-white/10 bg-white/5">
+            <div class="aspect-[4/3] bg-gradient-to-br from-brand-700/40 via-slate-900 to-earth-700/30">
+              <svg viewBox="0 0 400 300" class="h-full w-full opacity-80" fill="none" aria-hidden="true">
+                <path d="M0 240 C 80 190, 140 240, 220 200 S 340 170, 400 210 V 300 H 0 Z" fill="rgba(255,255,255,0.06)" />
+                <path d="M70 210l45-45 55 55 70-70 90 90" stroke="rgba(255,255,255,0.18)" stroke-width="6" />
+                <circle cx="120" cy="110" r="22" fill="rgba(255,255,255,0.10)" />
+              </svg>
+            </div>
+            <figcaption class="p-5">
+              <div class="text-sm font-semibold text-white" data-i18n="pf1Title">Reparación de grietas y fisuras</div>
+              <div class="mt-1 text-xs text-slate-300" data-i18n="pf1Body">Sellado + refuerzo + acabado (según diagnóstico).</div>
+            </figcaption>
+          </figure>
+
+          <figure class="group overflow-hidden rounded-3xl border border-white/10 bg-white/5">
+            <div class="aspect-[4/3] bg-gradient-to-br from-earth-700/35 via-slate-900 to-brand-700/35">
+              <svg viewBox="0 0 400 300" class="h-full w-full opacity-80" fill="none" aria-hidden="true">
+                <rect x="60" y="70" width="280" height="160" rx="18" fill="rgba(255,255,255,0.06)" />
+                <path d="M80 190h240" stroke="rgba(255,255,255,0.18)" stroke-width="6" />
+                <path d="M100 150h160" stroke="rgba(255,255,255,0.16)" stroke-width="6" />
+                <path d="M100 115h210" stroke="rgba(255,255,255,0.12)" stroke-width="6" />
+              </svg>
+            </div>
+            <figcaption class="p-5">
+              <div class="text-sm font-semibold text-white" data-i18n="pf2Title">Remodelación interior</div>
+              <div class="mt-1 text-xs text-slate-300" data-i18n="pf2Body">Redistribución, acabados y funcionalidad.</div>
+            </figcaption>
+          </figure>
+
+          <figure class="group overflow-hidden rounded-3xl border border-white/10 bg-white/5">
+            <div class="aspect-[4/3] bg-gradient-to-br from-brand-700/30 via-slate-900 to-emerald-700/20">
+              <svg viewBox="0 0 400 300" class="h-full w-full opacity-80" fill="none" aria-hidden="true">
+                <path d="M85 210V120l115-70 115 70v90" stroke="rgba(255,255,255,0.18)" stroke-width="8" />
+                <path d="M170 210v-60h60v60" stroke="rgba(255,255,255,0.16)" stroke-width="8" />
+                <circle cx="300" cy="85" r="26" fill="rgba(255,255,255,0.08)" />
+              </svg>
+            </div>
+            <figcaption class="p-5">
+              <div class="text-sm font-semibold text-white" data-i18n="pf3Title">Reforzamiento de losa</div>
+              <div class="mt-1 text-xs text-slate-300" data-i18n="pf3Body">Intervención con control técnico y seguridad.</div>
+            </figcaption>
+          </figure>
+
+          <figure class="group overflow-hidden rounded-3xl border border-white/10 bg-white/5">
+            <div class="aspect-[4/3] bg-gradient-to-br from-emerald-700/15 via-slate-900 to-earth-700/35">
+              <svg viewBox="0 0 400 300" class="h-full w-full opacity-80" fill="none" aria-hidden="true">
+                <path d="M70 230h260" stroke="rgba(255,255,255,0.18)" stroke-width="10" />
+                <path d="M110 230V90" stroke="rgba(255,255,255,0.14)" stroke-width="10" />
+                <path d="M200 230V120" stroke="rgba(255,255,255,0.14)" stroke-width="10" />
+                <path d="M290 230V70" stroke="rgba(255,255,255,0.14)" stroke-width="10" />
+              </svg>
+            </div>
+            <figcaption class="p-5">
+              <div class="text-sm font-semibold text-white" data-i18n="pf4Title">Corrección de asentamientos</div>
+              <div class="mt-1 text-xs text-slate-300" data-i18n="pf4Body">Cimentación y solución de causa raíz.</div>
+            </figcaption>
+          </figure>
+
+          <figure class="group overflow-hidden rounded-3xl border border-white/10 bg-white/5">
+            <div class="aspect-[4/3] bg-gradient-to-br from-earth-700/30 via-slate-900 to-brand-700/30">
+              <svg viewBox="0 0 400 300" class="h-full w-full opacity-80" fill="none" aria-hidden="true">
+                <path d="M90 210h220" stroke="rgba(255,255,255,0.18)" stroke-width="8" />
+                <path d="M130 210c0-80 140-80 140 0" stroke="rgba(255,255,255,0.14)" stroke-width="8" />
+                <path d="M170 150h60" stroke="rgba(255,255,255,0.12)" stroke-width="8" />
+              </svg>
+            </div>
+            <figcaption class="p-5">
+              <div class="text-sm font-semibold text-white" data-i18n="pf5Title">Impermeabilización</div>
+              <div class="mt-1 text-xs text-slate-300" data-i18n="pf5Body">Tratamiento de filtraciones y humedad.</div>
+            </figcaption>
+          </figure>
+
+          <figure class="group overflow-hidden rounded-3xl border border-white/10 bg-white/5">
+            <div class="aspect-[4/3] bg-gradient-to-br from-brand-700/35 via-slate-900 to-earth-700/25">
+              <svg viewBox="0 0 400 300" class="h-full w-full opacity-80" fill="none" aria-hidden="true">
+                <rect x="80" y="70" width="240" height="160" rx="22" fill="rgba(255,255,255,0.06)" />
+                <path d="M120 120h160" stroke="rgba(255,255,255,0.14)" stroke-width="8" />
+                <path d="M120 160h120" stroke="rgba(255,255,255,0.12)" stroke-width="8" />
+                <path d="M120 200h180" stroke="rgba(255,255,255,0.10)" stroke-width="8" />
+              </svg>
+            </div>
+            <figcaption class="p-5">
+              <div class="text-sm font-semibold text-white" data-i18n="pf6Title">Adecuaciones comerciales</div>
+              <div class="mt-1 text-xs text-slate-300" data-i18n="pf6Body">Locales: funcionalidad, imagen y seguridad.</div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonios" class="border-t border-white/10 bg-slate-950">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
+        <div class="max-w-2xl">
+          <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl" data-i18n="testimonialsTitle">Testimonios</h2>
+          <p class="mt-3 text-slate-200" data-i18n="testimonialsSub">
+            Reemplaza estos textos por reseñas reales (Google, WhatsApp o carta simple) y agrega ubicación del proyecto si el cliente lo autoriza.
+          </p>
+        </div>
+
+        <div class="mt-10 grid gap-4 md:grid-cols-3">
+          <figure class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <div class="flex items-center justify-between">
+              <div class="text-sm font-semibold text-white" data-i18n="t1Name">Cliente residencial</div>
+              <div class="text-xs text-slate-300" data-i18n="t1City">León, Gto.</div>
+            </div>
+            <blockquote class="mt-4 text-sm text-slate-200" data-i18n="t1Quote">
+              “Nos explicó la causa de las grietas y la solución. El trabajo quedó limpio y ya no volvió el problema.”
+            </blockquote>
+            <div class="mt-4 flex gap-1 text-amber-300" aria-label="5 estrellas">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+          </figure>
+
+          <figure class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <div class="flex items-center justify-between">
+              <div class="text-sm font-semibold text-white" data-i18n="t2Name">Local comercial</div>
+              <div class="text-xs text-slate-300" data-i18n="t2City">Zona centro</div>
+            </div>
+            <blockquote class="mt-4 text-sm text-slate-200" data-i18n="t2Quote">
+              “Excelente supervisión. Cumplieron tiempos y el presupuesto fue transparente desde el inicio.”
+            </blockquote>
+            <div class="mt-4 flex gap-1 text-amber-300" aria-label="5 estrellas">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+          </figure>
+
+          <figure class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <div class="flex items-center justify-between">
+              <div class="text-sm font-semibold text-white" data-i18n="t3Name">Remodelación</div>
+              <div class="text-xs text-slate-300" data-i18n="t3City">León, Gto.</div>
+            </div>
+            <blockquote class="mt-4 text-sm text-slate-200" data-i18n="t3Quote">
+              “Nos ayudó a tomar decisiones técnicas sin gastar de más. Se siente sólido y bien hecho.”
+            </blockquote>
+            <div class="mt-4 flex gap-1 text-amber-300" aria-label="5 estrellas">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contacto" class="border-t border-white/10 bg-slate-950">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
+        <div class="grid gap-10 lg:grid-cols-12 lg:items-start">
+          <div class="lg:col-span-5">
+            <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl" data-i18n="contactTitle">Contacto</h2>
+            <p class="mt-3 text-slate-200" data-i18n="contactSub">
+              Cuéntame tu caso. Si puedes, incluye fotos, medidas aproximadas y ubicación. Te respondo con el siguiente paso.
+            </p>
+
+            <div class="mt-6 space-y-3 text-sm">
+              <a
+                class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 hover:bg-white/10"
+                href="https://wa.me/5214776464346?text=Hola%2C%20quiero%20cotizar%20un%20servicio%20en%20Le%C3%B3n%2C%20Gto."
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-700/50 ring-1 ring-white/10">
+                  <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M20.52 3.48A11.85 11.85 0 0 0 12.03 0C5.46 0 .12 5.34.12 11.91c0 2.1.55 4.15 1.6 5.97L0 24l6.27-1.64a11.9 11.9 0 0 0 5.76 1.47h.01c6.57 0 11.91-5.34 11.91-11.91 0-3.18-1.24-6.17-3.43-8.44Z"
+                    />
+                  </svg>
+                </span>
+                <div class="flex-1">
+                  <div class="font-semibold text-white" data-i18n="contactWhatsapp">WhatsApp</div>
+                  <div class="text-xs text-slate-300" data-i18n="contactWhatsappHint">Mensaje directo (más rápido)</div>
+                </div>
+                <span class="text-xs font-semibold text-slate-200">→</span>
+              </a>
+
+              <a class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 hover:bg-white/10" href="tel:+524776464346">
+                <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand-800/50 ring-1 ring-white/10">
+                  <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.86.32 1.7.57 2.5a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.58-1.09a2 2 0 0 1 2.11-.45c.8.25 1.64.45 2.5.57A2 2 0 0 1 22 16.92z"
+                    />
+                  </svg>
+                </span>
+                <div class="flex-1">
+                  <div class="font-semibold text-white" data-i18n="contactPhone">Llamada</div>
+                  <div class="text-xs text-slate-300" data-i18n="contactPhoneHint">Atención de lunes a sábado</div>
+                </div>
+                <span class="text-xs font-semibold text-slate-200">→</span>
+              </a>
+
+              <a
+                class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 hover:bg-white/10"
+                href="mailto:proyectosdeurbanizaci%C3%B3nram@gmail.com?subject=Solicitud%20de%20evaluaci%C3%B3n%20%7C%20Le%C3%B3n%2C%20Gto."
+              >
+                <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-earth-800/50 ring-1 ring-white/10">
+                  <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M4 4h16v16H4z" />
+                    <path d="m4 6 8 7 8-7" />
+                  </svg>
+                </span>
+                <div class="flex-1">
+                  <div class="font-semibold text-white" data-i18n="contactEmail">Email</div>
+                  <div class="text-xs text-slate-300">proyectosdeurbanizaciónram@gmail.com</div>
+                </div>
+                <span class="text-xs font-semibold text-slate-200">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <form class="rounded-3xl border border-white/10 bg-white/5 p-6" action="#" method="post">
+              <div class="grid gap-4 sm:grid-cols-2">
+                <label class="block">
+                  <span class="text-sm font-semibold text-white" data-i18n="formName">Nombre</span>
+                  <input
+                    required
+                    name="name"
+                    type="text"
+                    class="mt-2 w-full rounded-xl border border-white/10 bg-slate-950/40 px-4 py-3 text-sm text-white placeholder:text-slate-400 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-400/30"
+                    placeholder="Tu nombre"
+                    data-i18n-placeholder="formNamePh"
+                  />
+                </label>
+                <label class="block">
+                  <span class="text-sm font-semibold text-white" data-i18n="formPhone">Teléfono / WhatsApp</span>
+                  <input
+                    required
+                    name="phone"
+                    type="tel"
+                    class="mt-2 w-full rounded-xl border border-white/10 bg-slate-950/40 px-4 py-3 text-sm text-white placeholder:text-slate-400 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-400/30"
+                    placeholder="(477) 000 0000"
+                    data-i18n-placeholder="formPhonePh"
+                  />
+                </label>
+                <label class="block sm:col-span-2">
+                  <span class="text-sm font-semibold text-white" data-i18n="formEmail">Email (opcional)</span>
+                  <input
+                    name="email"
+                    type="email"
+                    class="mt-2 w-full rounded-xl border border-white/10 bg-slate-950/40 px-4 py-3 text-sm text-white placeholder:text-slate-400 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-400/30"
+                    placeholder="correo@ejemplo.com"
+                    data-i18n-placeholder="formEmailPh"
+                  />
+                </label>
+                <label class="block sm:col-span-2">
+                  <span class="text-sm font-semibold text-white" data-i18n="formService">¿Qué necesitas?</span>
+                  <select
+                    name="service"
+                    class="mt-2 w-full rounded-xl border border-white/10 bg-slate-950/40 px-4 py-3 text-sm text-white focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-400/30"
+                  >
+                    <option value="diagnostico" data-i18n="opt1">Diagnóstico</option>
+                    <option value="reparacion" data-i18n="opt2">Reparación / Reforzamiento</option>
+                    <option value="remodelacion" data-i18n="opt3">Remodelación</option>
+                    <option value="ampliacion" data-i18n="opt4">Ampliación</option>
+                    <option value="humedad" data-i18n="opt5">Humedad / Impermeabilización</option>
+                    <option value="otro" data-i18n="opt6">Otro</option>
+                  </select>
+                </label>
+                <label class="block sm:col-span-2">
+                  <span class="text-sm font-semibold text-white" data-i18n="formMsg">Mensaje</span>
+                  <textarea
+                    required
+                    name="message"
+                    rows="5"
+                    class="mt-2 w-full rounded-xl border border-white/10 bg-slate-950/40 px-4 py-3 text-sm text-white placeholder:text-slate-400 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-400/30"
+                    placeholder="Describe el problema, ubicación (colonia) y tiempos."
+                    data-i18n-placeholder="formMsgPh"
+                  ></textarea>
+                </label>
+              </div>
+
+              <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <p class="text-xs text-slate-300" data-i18n="formNote">
+                  Al enviar, aceptas ser contactado para fines de cotización. No compartimos tu información.
+                </p>
+                <button
+                  type="submit"
+                  class="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-slate-200"
+                  data-i18n="formSubmit"
+                >
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 bg-slate-950">
+      <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6">
+        <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+          <div class="text-sm text-slate-300">
+            <span class="font-semibold text-white" data-i18n="footerBrand">Ingeniería Civil</span>
+            <span class="text-slate-400">·</span>
+            <span data-i18n="footerCity">León, Guanajuato</span>
+          </div>
+          <div class="flex flex-wrap items-center gap-4 text-sm text-slate-300">
+            <a href="#servicios" class="hover:text-white" data-i18n="navServices">Servicios</a>
+            <a href="#portafolio" class="hover:text-white" data-i18n="navPortfolio">Portafolio</a>
+            <a href="#contacto" class="hover:text-white" data-i18n="navContact">Contacto</a>
+          </div>
+        </div>
+        <div class="mt-6 text-xs text-slate-500" data-i18n="footerLegal">
+          © <span id="year"></span> — Página demo. Actualiza teléfono, WhatsApp y correo con tus datos reales.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const I18N = {
+        es: {
+          brandName: "Ingeniería Civil",
+          brandTagline: "Reparación y remodelaje • León, Gto.",
+          navServices: "Servicios",
+          navPortfolio: "Portafolio",
+          navTestimonials: "Testimonios",
+          navContact: "Contacto",
+          headerQuote: "Cotizar",
+
+          heroPill: "Atención en León, Guanajuato y alrededores",
+          heroHeadline1: "Repara, refuerza y remodela",
+          heroHeadline2: "con ingeniería civil profesional",
+          heroSub:
+            "Diagnóstico claro, solución correcta y ejecución supervisada. Ideal para casas, locales y naves: grietas, humedad, losas, cimentaciones, ampliaciones y remodelaciones.",
+          ctaWhatsapp: "WhatsApp",
+          ctaFastReply: "respuesta rápida",
+          ctaCall: "Llamar",
+          ctaEmail: "Email",
+          trust1Title: "Experiencia",
+          trust1Body: "Obra y supervisión",
+          trust2Title: "Diagnóstico",
+          trust2Body: "Causa raíz",
+          trust3Title: "Calidad",
+          trust3Body: "Materiales correctos",
+          trust4Title: "Transparencia",
+          trust4Body: "Alcances claros",
+          cardKicker: "Evaluación inicial",
+          cardTitle: "Diagnóstico + propuesta",
+          cardBadge: "24–72 hrs",
+          cardBullet1Title: "Alcance claro",
+          cardBullet1Body: "Qué se hará, cómo y en cuánto tiempo.",
+          cardBullet2Title: "En sitio",
+          cardBullet2Body: "Visita en León y zona metropolitana.",
+          cardBullet3Title: "Supervisión",
+          cardBullet3Body: "Control de calidad y seguridad en obra.",
+          miniTitle: "¿Tienes una urgencia?",
+          miniBody: "Envíame fotos y ubicación por WhatsApp. Te digo el siguiente paso.",
+          miniCta: "Enviar por WhatsApp",
+
+          aboutTitle: "Sobre el ingeniero",
+          aboutBody:
+            "Eduardo Ramírez Santamaría es ingeniero civil con amplia experiencia en reparación, reforzamiento y remodelación. En cada proyecto se prioriza: seguridad, solución de causa raíz y control de calidad. La meta no es “parchar”, es dejar tu inmueble sólido y duradero.",
+          aboutPoint1Title: "Experiencia práctica",
+          aboutPoint1Body: "Obra real, presupuestos claros y supervisión profesional.",
+          aboutPoint2Title: "Criterio técnico",
+          aboutPoint2Body: "Se elige el método adecuado según el problema y el contexto.",
+          aboutPoint3Title: "Resultados confiables",
+          aboutPoint3Body: "Trabajo limpio, seguro y con enfoque en durabilidad.",
+          aboutCard1Title: "Cómo trabajamos",
+          aboutCard1Step1: "Evaluación: fotos + visita en sitio.",
+          aboutCard1Step2: "Diagnóstico: causa raíz y riesgos.",
+          aboutCard1Step3: "Propuesta: alcance, costos y tiempos.",
+          aboutCard1Step4: "Ejecución: supervisión y control de calidad.",
+          aboutCard2Title: "Ideal para",
+          aboutIdeal1: "Casas y departamentos",
+          aboutIdeal2: "Locales comerciales",
+          aboutIdeal3: "Naves y bodegas",
+          aboutIdeal4: "Remodelaciones",
+          aboutNote: "* Sustituye los ejemplos por tus especialidades reales (y agrega tu cédula/registro si aplica).",
+
+          servicesTitle: "Servicios",
+          servicesSub: "Soluciones enfocadas a seguridad, durabilidad y buena estética. Cada intervención parte de un diagnóstico técnico.",
+          svc1Title: "Diagnóstico estructural",
+          svc1Body: "Identificación de grietas, asentamientos, humedad y fallas.",
+          svc2Title: "Reforzamiento",
+          svc2Body: "Soluciones para muros, trabes, losas y elementos dañados.",
+          svc3Title: "Remodelación",
+          svc3Body: "Redistribución, acabados, funcionalidad y mejora de espacios.",
+          svc4Title: "Ampliaciones",
+          svc4Body: "Crecimiento seguro: cimentación, losas, muros y estructura.",
+          svc5Title: "Impermeabilización y humedad",
+          svc5Body: "Tratamientos, sellos y corrección de filtraciones.",
+          svc6Title: "Cimentaciones y asentamientos",
+          svc6Body: "Corrección de asentamientos y solución de causas.",
+          svc7Title: "Obra civil y albañilería",
+          svc7Body: "Aplanados, muros, pisos, losas y detalles finos.",
+          svc8Title: "Supervisión y control",
+          svc8Body: "Bitácora, calidad, seguridad y seguimiento de avances.",
+
+          portfolioTitle: "Portafolio",
+          portfolioSub:
+            "Ejemplos de tipos de trabajo. Sustituye los placeholders por fotos reales (antes/después) para elevar la confianza.",
+          portfolioCta: "Pedir evaluación",
+          pf1Title: "Reparación de grietas y fisuras",
+          pf1Body: "Sellado + refuerzo + acabado (según diagnóstico).",
+          pf2Title: "Remodelación interior",
+          pf2Body: "Redistribución, acabados y funcionalidad.",
+          pf3Title: "Reforzamiento de losa",
+          pf3Body: "Intervención con control técnico y seguridad.",
+          pf4Title: "Corrección de asentamientos",
+          pf4Body: "Cimentación y solución de causa raíz.",
+          pf5Title: "Impermeabilización",
+          pf5Body: "Tratamiento de filtraciones y humedad.",
+          pf6Title: "Adecuaciones comerciales",
+          pf6Body: "Locales: funcionalidad, imagen y seguridad.",
+
+          testimonialsTitle: "Testimonios",
+          testimonialsSub:
+            "Reemplaza estos textos por reseñas reales (Google, WhatsApp o carta simple) y agrega ubicación del proyecto si el cliente lo autoriza.",
+          t1Name: "Cliente residencial",
+          t1City: "León, Gto.",
+          t1Quote: "“Nos explicó la causa de las grietas y la solución. El trabajo quedó limpio y ya no volvió el problema.”",
+          t2Name: "Local comercial",
+          t2City: "Zona centro",
+          t2Quote: "“Excelente supervisión. Cumplieron tiempos y el presupuesto fue transparente desde el inicio.”",
+          t3Name: "Remodelación",
+          t3City: "León, Gto.",
+          t3Quote: "“Nos ayudó a tomar decisiones técnicas sin gastar de más. Se siente sólido y bien hecho.”",
+
+          contactTitle: "Contacto",
+          contactSub: "Cuéntame tu caso. Si puedes, incluye fotos, medidas aproximadas y ubicación. Te respondo con el siguiente paso.",
+          contactWhatsapp: "WhatsApp",
+          contactWhatsappHint: "Mensaje directo (más rápido)",
+          contactPhone: "Llamada",
+          contactPhoneHint: "Atención de lunes a sábado",
+          contactEmail: "Email",
+
+          formName: "Nombre",
+          formNamePh: "Tu nombre",
+          formPhone: "Teléfono / WhatsApp",
+          formPhonePh: "(477) 000 0000",
+          formEmail: "Email (opcional)",
+          formEmailPh: "correo@ejemplo.com",
+          formService: "¿Qué necesitas?",
+          opt1: "Diagnóstico",
+          opt2: "Reparación / Reforzamiento",
+          opt3: "Remodelación",
+          opt4: "Ampliación",
+          opt5: "Humedad / Impermeabilización",
+          opt6: "Otro",
+          formMsg: "Mensaje",
+          formMsgPh: "Describe el problema, ubicación (colonia) y tiempos.",
+          formNote: "Al enviar, aceptas ser contactado para fines de cotización. No compartimos tu información.",
+          formSubmit: "Enviar",
+
+          footerBrand: "Ingeniería Civil",
+          footerCity: "León, Guanajuato",
+          footerLegal: "© {year} — Página demo. Actualiza teléfono, WhatsApp y correo con tus datos reales.",
+        },
+        en: {
+          brandName: "Civil Engineering",
+          brandTagline: "Repair & Remodeling • León, MX",
+          navServices: "Services",
+          navPortfolio: "Portfolio",
+          navTestimonials: "Testimonials",
+          navContact: "Contact",
+          headerQuote: "Get a quote",
+
+          heroPill: "Serving León, Guanajuato and nearby areas",
+          heroHeadline1: "Repair, reinforce, and remodel",
+          heroHeadline2: "with professional civil engineering",
+          heroSub:
+            "Clear diagnosis, the right solution, and supervised execution. Ideal for homes, shops and warehouses: cracks, moisture, slabs, foundations, extensions and remodels.",
+          ctaWhatsapp: "WhatsApp",
+          ctaFastReply: "fast reply",
+          ctaCall: "Call",
+          ctaEmail: "Email",
+          trust1Title: "Experience",
+          trust1Body: "Work & supervision",
+          trust2Title: "Diagnosis",
+          trust2Body: "Root cause",
+          trust3Title: "Quality",
+          trust3Body: "Proper materials",
+          trust4Title: "Transparency",
+          trust4Body: "Clear scope",
+          cardKicker: "Initial assessment",
+          cardTitle: "Diagnosis + proposal",
+          cardBadge: "24–72 hrs",
+          cardBullet1Title: "Clear scope",
+          cardBullet1Body: "What will be done, how, and timeline.",
+          cardBullet2Title: "On-site",
+          cardBullet2Body: "Visit in León metro area.",
+          cardBullet3Title: "Supervision",
+          cardBullet3Body: "Quality and safety control on site.",
+          miniTitle: "Need help urgently?",
+          miniBody: "Send photos and location via WhatsApp. I’ll tell you the next step.",
+          miniCta: "Send on WhatsApp",
+
+          aboutTitle: "About the engineer",
+          aboutBody:
+            "Eduardo Ramírez Santamaría is a civil engineer with extensive experience in repair, reinforcement and remodeling. Every project prioritizes safety, root-cause solutions and quality control. The goal isn’t a quick patch—it’s a solid, durable property.",
+          aboutPoint1Title: "Hands-on experience",
+          aboutPoint1Body: "Real job sites, clear budgets, professional supervision.",
+          aboutPoint2Title: "Technical judgment",
+          aboutPoint2Body: "The right method for your specific issue and context.",
+          aboutPoint3Title: "Reliable results",
+          aboutPoint3Body: "Clean, safe work focused on long-term durability.",
+          aboutCard1Title: "How we work",
+          aboutCard1Step1: "Assessment: photos + on-site visit.",
+          aboutCard1Step2: "Diagnosis: root cause and risk.",
+          aboutCard1Step3: "Proposal: scope, cost and schedule.",
+          aboutCard1Step4: "Execution: supervision and quality control.",
+          aboutCard2Title: "Best for",
+          aboutIdeal1: "Homes & apartments",
+          aboutIdeal2: "Retail spaces",
+          aboutIdeal3: "Warehouses",
+          aboutIdeal4: "Remodel projects",
+          aboutNote: "* Replace examples with your real specialties (add license ID if applicable).",
+
+          servicesTitle: "Services",
+          servicesSub: "Solutions focused on safety, durability and clean aesthetics. Every intervention starts with a technical diagnosis.",
+          svc1Title: "Structural diagnosis",
+          svc1Body: "Cracks, settlement, moisture and failure identification.",
+          svc2Title: "Reinforcement",
+          svc2Body: "Solutions for walls, beams, slabs and damaged elements.",
+          svc3Title: "Remodeling",
+          svc3Body: "Layout changes, finishes, functionality and upgrades.",
+          svc4Title: "Extensions",
+          svc4Body: "Safe growth: foundations, slabs, walls and structure.",
+          svc5Title: "Waterproofing & moisture",
+          svc5Body: "Treatments, sealing and leak correction.",
+          svc6Title: "Foundations & settlement",
+          svc6Body: "Settlement correction and root-cause solutions.",
+          svc7Title: "Civil works & masonry",
+          svc7Body: "Plastering, walls, flooring, slabs and detail work.",
+          svc8Title: "Supervision & control",
+          svc8Body: "Site log, quality, safety and progress tracking.",
+
+          portfolioTitle: "Portfolio",
+          portfolioSub: "Work-type examples. Replace placeholders with real before/after photos to boost trust.",
+          portfolioCta: "Request an assessment",
+          pf1Title: "Crack repair",
+          pf1Body: "Sealing + reinforcement + finishing (as diagnosed).",
+          pf2Title: "Interior remodel",
+          pf2Body: "Layout, finishes and functionality.",
+          pf3Title: "Slab reinforcement",
+          pf3Body: "Safe intervention with technical control.",
+          pf4Title: "Settlement correction",
+          pf4Body: "Foundation work and root-cause solution.",
+          pf5Title: "Waterproofing",
+          pf5Body: "Leak and moisture treatment.",
+          pf6Title: "Commercial upgrades",
+          pf6Body: "Retail: function, image and safety.",
+
+          testimonialsTitle: "Testimonials",
+          testimonialsSub:
+            "Replace with real reviews (Google, WhatsApp, or a simple letter). Add project area if the client approves.",
+          t1Name: "Residential client",
+          t1City: "León, MX",
+          t1Quote: "“He explained the root cause of the cracks and the fix. Clean work—and the issue didn’t return.”",
+          t2Name: "Retail space",
+          t2City: "Downtown area",
+          t2Quote: "“Great supervision. Deadlines were met and the budget was transparent from day one.”",
+          t3Name: "Remodel project",
+          t3City: "León, MX",
+          t3Quote: "“He helped us make technical decisions without overspending. It feels solid and well built.”",
+
+          contactTitle: "Contact",
+          contactSub: "Tell me about your project. If possible, include photos, approximate dimensions and location. I’ll reply with next steps.",
+          contactWhatsapp: "WhatsApp",
+          contactWhatsappHint: "Direct message (fastest)",
+          contactPhone: "Phone call",
+          contactPhoneHint: "Mon–Sat availability",
+          contactEmail: "Email",
+
+          formName: "Name",
+          formNamePh: "Your name",
+          formPhone: "Phone / WhatsApp",
+          formPhonePh: "+52 (477) 000 0000",
+          formEmail: "Email (optional)",
+          formEmailPh: "you@example.com",
+          formService: "What do you need?",
+          opt1: "Diagnosis",
+          opt2: "Repair / Reinforcement",
+          opt3: "Remodeling",
+          opt4: "Extension",
+          opt5: "Moisture / Waterproofing",
+          opt6: "Other",
+          formMsg: "Message",
+          formMsgPh: "Describe the issue, neighborhood, and desired timeline.",
+          formNote: "By sending, you agree to be contacted for a quote. We don’t share your information.",
+          formSubmit: "Send",
+
+          footerBrand: "Civil Engineering",
+          footerCity: "León, Guanajuato",
+          footerLegal: "© {year} — Demo page. Update phone, WhatsApp and email with your real details.",
+        },
+      };
+
+      const state = {
+        lang: "es",
+      };
+
+      function applyI18n(lang) {
+        const dict = I18N[lang] || I18N.es;
+        document.documentElement.lang = lang;
+
+        // Text nodes
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          const value = dict[key];
+          if (typeof value === "string") el.textContent = value.replace("{year}", String(new Date().getFullYear()));
+        });
+
+        // Placeholders
+        document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+          const key = el.getAttribute("data-i18n-placeholder");
+          const value = dict[key];
+          if (typeof value === "string") el.setAttribute("placeholder", value);
+        });
+
+        const langA = document.getElementById("langA");
+        const langB = document.getElementById("langB");
+        if (langA && langB) {
+          if (lang === "es") {
+            langA.textContent = "ES";
+            langB.textContent = "EN";
+            langA.className = "rounded-lg bg-brand-800/60 px-2 py-1 text-[11px]";
+            langB.className = "text-slate-300";
+          } else {
+            langA.textContent = "EN";
+            langB.textContent = "ES";
+            langA.className = "rounded-lg bg-brand-800/60 px-2 py-1 text-[11px]";
+            langB.className = "text-slate-300";
+          }
+        }
+      }
+
+      (function init() {
+        const yearEl = document.getElementById("year");
+        if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+        const saved = localStorage.getItem("lang");
+        if (saved === "en" || saved === "es") state.lang = saved;
+        applyI18n(state.lang);
+
+        const btn = document.getElementById("langToggle");
+        if (btn) {
+          btn.addEventListener("click", () => {
+            state.lang = state.lang === "es" ? "en" : "es";
+            localStorage.setItem("lang", state.lang);
+            applyI18n(state.lang);
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
