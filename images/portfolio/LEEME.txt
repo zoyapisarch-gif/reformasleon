@@ -1,0 +1,7 @@
+Coloca aquí las fotos de cada proyecto y enlázalas en index.html:
+
+1) Portada de la tarjeta: atributo src del <img> dentro del botón del portafolio.
+2) Galería completa: atributo data-gallery en el mismo botón, URLs separadas por |
+   Ejemplo: images/portfolio/grietas-1.jpg|images/portfolio/grietas-2.jpg
+
+Puedes usar subcarpetas (ej. images/portfolio/remodel-cocina/01.jpg).
